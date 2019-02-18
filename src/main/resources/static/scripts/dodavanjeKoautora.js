@@ -34,7 +34,6 @@ $(document).ready(function () {
         		}
         	}
         	str+=" <button type=\"button\" onclick=\"dodajKoautora()\" class=\"btn\">Dodaj koautora</button>";
-        	str+=" <button type=\"button\" onclick=\"preskociDodavanjeKoautora()\" class=\"btn\">Preskoci</button>";
         	
         	str+="<input type=\"hidden\" id=\"taskId\" name=\"taskId\" value=\""+data.taskId+"\">";
 			str+="<input type=\"hidden\" id=\"processInstanceId\" name=\"processInstanceId\" value=\""+data.processInstanceId+"\">";
@@ -106,8 +105,4 @@ function dodajKoautora(){
         } 
         });
 	
-}
-
-function preskociDodavanjeKoautora(){
-	top.location.href = "pocetnaNC.html";
 }
